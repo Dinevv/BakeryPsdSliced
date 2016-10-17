@@ -1,0 +1,845 @@
+$primary: #56534c
+$secondary: #a47d5e
+$header-bg: #9e9c93
+
+@font-face
+    font-family: Alegreya
+    font-weight: 300
+    src: url('../fonts/Alegreya-Regular.ttf')
+
+@font-face
+    font-family: Alegreya
+    font-weight: 600
+    src: url('../fonts/Alegreya-Bold.ttf')
+
+@font-face
+    font-family: PlayfairDisplay
+    font-weight: 300
+    src: url('../fonts/PlayfairDisplay-Regular.ttf')
+
+@font-face
+    font-family: PlayfairDisplay
+    font-weight: 600
+    src: url('../fonts/PlayfairDisplay-Bold.ttf')
+
+body
+    margin: 0
+    padding: 0
+    font-family: Arial, sans-serif
+    overflow-x: hidden
+
+.container
+    width: 1260px
+    margin: 0 auto
+
+.fixed-width
+    max-width: 1600px
+    margin: 0 auto
+
+h1, h2, h3, p
+    padding: 0
+    margin: 0
+
+h2, h3
+    font-family: Alegreya, serif
+    font-weight: 600
+    font-size: 48px
+    line-height: 30px
+    letter-spacing: 0.025em
+    color: $primary
+
+.h2sub
+    font-family: Alegreya, serif
+    font-weight: 600
+    text-transform: uppercase
+    font-size: 14px
+    line-height: 30px
+    letter-spacing: 0.100em
+    color: $secondary
+    display: inline-block
+    padding-top: 20px
+    padding-bottom: 50px
+
+p
+    font-family: ProximaNova, Arial, sans-serif
+    font-size: 14px
+    line-height: 24px
+    letter-spacing: 0.100em
+    color: $primary
+
+a
+    text-decoration: none
+
+ul
+    padding: 0
+    margin: 0
+    list-style: none
+
+.col
+    width: 630px
+    float: left
+
+#showNav
+    display: none
+
+#showNav.show
+    position: relative
+    width: 20px
+    transition: all 0.5s
+    span
+        display: inline-block
+        width: 100%
+        background: #fff
+
+        height: 2px
+        vertical-align: middle
+        margin-bottom: 3px
+        &:after
+            content: ''
+            display: block
+            position: absolute
+            top: 3px
+            height: 2px
+            background-color: #fff
+            left: 0
+            width: 100%
+            transition: all 0.5s
+        &:before
+            content: ''
+            display: block
+            position: absolute
+            bottom: 4px
+            height: 2px
+            background-color: #fff
+            left: 0
+            width: 100%
+            transition: all 0.5s
+
+#showNav.hide
+    span
+        transition: all 0.5s
+        width: 0
+        &:after
+            -webkit-transform: rotate(-45deg)
+            -moz-transform: rotate(-45deg)
+            -o-transform: rotate(-45deg)
+            transform: rotate(-45deg)
+            top: 9px
+        &:before
+            -webkit-transform: rotate(45deg)
+            -moz-transform: rotate(45deg)
+            -o-transform: rotate(45deg)
+            transform: rotate(45deg)
+            bottom: 10px
+
+#header
+    width: 100%
+    background-color: $header-bg
+    background-image: url('../imgs/headerbg-shadow.png'), url('../imgs/headerbg.jpg')
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    #site-logo
+        a
+            display: block
+            font-family: Scriptin, serif
+            font-size: 30px
+            line-height: 24px
+            color: #fff
+            padding-top: 17px
+            float: left
+    #top
+        width: 100%
+        height: 70px
+        background: rgba(86, 83, 76, 0.5)
+        position: relative
+        ul#navigation
+            margin: 0
+            padding: 0
+            float: left
+            padding-left: 86px
+            margin-top: 23px
+            li
+                display: inline-block
+                position: relative
+                &:last-child::after
+                    content: ''
+                    display: none
+                a
+                    font-family: Alegreya, serif
+                    font-size: 14px
+                    line-height: 24px
+                    color: #fff
+                    letter-spacing: 0.3em
+                    text-transform: uppercase
+                    padding-right: 82px
+
+                &::after
+                    content: '~'
+                    display: block
+                    position: absolute
+                    right: 35px
+                    top: 0
+                    color: #fff
+        ul#social
+            float: right
+            margin-top: 25px
+            li
+                display: inline-block
+                padding-left: 23px
+                a
+                    color: #fff
+                    font-size: 18px
+    .content
+        width: 100%
+        height: auto
+        text-align: center
+        color: #fff
+    h1#site-title
+        margin-top: 240px
+        font-size: 92px
+        line-height: 24px
+        letter-spacing: 0.075em
+        text-shadow: 0 1px #3d3029
+        padding-bottom: 60px
+    .dashed-line
+        margin-top: 30px
+        text-align: center
+    .slogan
+        font-size: 24px
+        letter-spacing: 0.1em
+        line-height: 36px
+        font-family: Arial,sans-serif
+        margin: 50px 0 90px 0
+        color: #fff
+        text-shadow: 0 1px #3d3029
+    .btn
+        display:block
+        background: rgba(86, 83, 76, 0.5)
+        padding: 18px 45px
+        border: 1px dashed #9e9c93
+        text-transform: uppercase
+        font-family: Alegreya, serif
+        font-weight: 600
+        color: #fff
+        font-size: 14px
+        letter-spacing: 0.3em
+        display: inline-block
+        margin-bottom: 80px
+#art
+    width: 100%
+    height: 760px
+    background: url('../imgs/art-bg.jpg')
+    background-repeat: no-repeat
+    background-size: cover
+    position: relative
+    &::before
+        content: ''
+        display: block
+        background: url('../imgs/art-bullet-border.png')
+        width: 100%
+        height: 106px
+        position: absolute
+        top: -49px
+        left: 0
+        background-position: center
+        background-repeat: no-repeat
+    .container
+        text-align: center
+        padding-top: 120px
+    h3
+        font-size: 24px
+        margin: 40px
+    .avatar
+        margin: 0 auto
+        width: 370px
+        height: 100px
+        text-align: center
+    .avatar-col, .avatar-col-center
+        width: 123px
+        height: 60px
+        border-top: 1px solid #d7d5ca
+        border-bottom: 1px solid #d7d5ca
+        float: left
+        margin-top: 21px
+        p
+            margin-top: 14px
+            font-family: Alegreya, serif
+            font-size: 24px
+            letter-spacing: 0.025em
+            color: $primary
+            line-height: 30px
+    .avatar-col-center
+        border: 0
+        text-align: center
+        margin-top: 0
+    .images
+        position: relative
+        .overlay-img
+            position: absolute
+            top: 50%
+            left: 50%
+            z-index: 9
+            transform: translate(-50%, -50%)
+    blockquote
+        width: 420px
+        margin: 0 auto
+        margin-top: 30px
+        position: relative
+        img
+            padding: 17px 0
+        &::before
+            content: ''
+            display: block
+            position: absolute
+            width: 23px
+            height: 14px
+            background: url('../imgs/quote.jpg')
+        &::after
+            content: ''
+            display: block
+            position: absolute
+            width: 23px
+            height: 14px
+            background: url('../imgs/quote.jpg')
+            right: 0
+            bottom: 0
+            -moz-transform: scaleX(-1)
+            -o-transform: scaleX(-1)
+            -webkit-transform: scaleX(-1)
+            transform: scaleX(-1)
+            filter: FlipH
+            -ms-filter: "FlipH"
+#pancakes
+    width: 100%
+    height: 760px
+    background: url('../imgs/pancakes-bg.jpg')
+    background-repeat: no-repeat
+    background-size: cover
+    position: relative
+    padding-top: 140px
+    overflow: hidden
+    .block
+        width: 1061px
+        height: 614px
+        background: url('../imgs/pancakes.png')
+        margin: 0 auto
+        position: relative
+    .rating-side
+        position: absolute
+        left: 74px
+        top: 40%
+        .fa
+            display: block
+            color: #fff
+            font-size: 18px
+            margin-bottom: 7px
+        .rated
+            color: #fff
+    .ready-box
+        position: absolute
+        top: 0
+        right: -78px
+        padding: 30px 40px
+        background-color: #fff
+        z-index: 10
+        text-align: center
+        box-shadow: 0 25px 45px rgba(105, 80, 58, 0.4)
+        box-sizing: border-box
+        width: 200px
+        height: 200px
+        background: url('../imgs/ready-box-bg.jpg')
+        p
+            font-family: Alegreya, serif
+            font-size: 18px
+            .h2sub
+                font-size: 18px
+                padding: 0
+            .number
+                display: inline-block
+                font-size: 92px
+                line-height: 30px
+                letter-spacing: 0.01em
+                color: #dfc691
+                padding: 38px 0 30px 0
+                font-weight: 600
+    .content
+        width: 546px
+        height: 512px
+        float: right
+        background: url('../imgs/pancakes-bg2.png'), #fff
+        background-repeat: no-repeat
+        background-position: bottom right
+        padding: 80px 60px 0 60px
+        box-sizing: border-box
+        position: relative
+        position: absolute
+        right: 48px
+        top: 23px
+        &::before
+            content: ''
+            display: block
+            position: absolute
+            width: 31px
+            height: 512px
+            background: url('../imgs/slider-v.png')
+            left: -31px
+            top: 0
+    .rating
+        margin-top: 52px
+    .rated
+        color: #c9b176
+    .fa-star
+        margin-right: 7px
+    .slider-control
+        padding-top: 20px
+#breakfast
+    width: 100%
+    height: 760px
+    background: url('../imgs/breakfast-bg.jpg')
+    background-repeat: no-repeat
+    background-size: cover
+    position: relative
+    padding-top: 92px
+    color: #fff
+    text-align: center
+    font-family: Alegreya, serif
+    &::after
+        content: ''
+        background: url(../imgs/breakfast-leaf.png)
+        width: 353px
+        height: 219px
+        position: absolute
+        bottom: 0
+        right: 0
+        display: block
+    h2
+        color: #fff
+        font-size: 60px
+    .h2sub
+        color: #c8a593
+        padding-top: 16px
+    .type
+        font-weight: 600
+        font-size: 30px
+        line-height: 30px
+        letter-spacing: 0.005em
+    .description
+        font-size: 16px
+        line-height: 30px
+        color: #c2beba
+        letter-spacing: 0.005em
+    .price
+        font-size: 36px
+        line-height: 30px
+        letter-spacing: 0.005em
+        color: #dfc691
+        display: inline-block
+        padding: 16px
+    ul
+        li
+            position: relative
+            padding-bottom: 70px
+            &::after
+                content: ''
+                background: url(../imgs/breakfast-separator.png)
+                width: 106px
+                height: 40px
+                position: absolute
+                bottom: 17px
+                left: 41%
+                display: block
+            &:last-child::after
+                content: ''
+                display: none
+    .col
+        position: relative
+    .note
+        background: url('../imgs/breakfast-note.png')
+        width: 507px
+        height: 650px
+        position: absolute
+        right: -100px
+        padding: 60px
+        padding: 60px 100px 0 60px
+        box-sizing: border-box
+        color: $primary
+        .head
+            font-weight: 600
+            font-size: 14px
+            .left
+                padding-right: 172px
+        .separator-img
+            width: 100%
+        h3
+            font-size: 44px
+            line-height: 60px
+            letter-spacing: 0.002em
+            padding-bottom: 40px
+            padding-top: 40px
+        p
+            font-family: Arial, sans-serif
+            font-size: 14px
+            line-height: 30px
+            letter-spacing: 0.005em
+            padding-bottom: 54px
+        .btn
+            padding: 14px 70px
+            border: 1px solid $header-bg
+            color: $secondary
+            font-weight: 600
+            text-transform: uppercase
+#sandwich
+    width: 100%
+    background-color: #f3f1e9
+    text-align: center
+    padding-top: 100px
+    position: relative
+    font-family: Alegreya, serif
+    overflow: hidden
+    &::before
+        content: ''
+        background: url(../imgs/sandwich-top-img.png)
+        background-position: center
+        background-repeat: no-repeat
+        width: 100%
+        height: 142px
+        position: absolute
+        top: 0
+        display: block
+    .left
+        float: left
+        width: 300px
+        margin-top: -120px
+    .right
+        float: right
+        position: relative
+    .right-image
+        border: 10px solid #fff
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    .title
+        font-size: 30px
+        font-weight: 600
+        letter-spacing: 0.0025em
+        line-height: 30px
+        color: $secondary
+        padding: 27px
+        display: inline-block
+    .description
+        font-family: Arial, sans-serif
+        font-size: 14px
+        line-height: 20px
+        letter-spacing: 0.010em
+        color: $primary
+        padding-bottom: 54px
+        display: inline-block
+    .info
+        position: absolute
+        top: -30px
+        right: 10px
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1)
+        li
+            padding: 40px 70px
+            background-color: rgba(255, 255, 255, 0.8)
+            box-sizing: content-box
+            font-family: Alegreya, serif
+            font-size: 18px
+            line-height: 30px
+            color: $secondary
+            .h2sub
+                font-size: 18px
+                padding: 0
+                color: $secondary
+            .number
+                display: inline-block
+                font-size: 60px
+                line-height: 30px
+                letter-spacing: 0.01em
+                color: $primary
+                font-weight: 600
+                display: inline-block
+                padding-top: 25px
+            &:last-child
+                background: url('../imgs/ready-box-bg.jpg')
+                background-size: cover
+                .number
+                    font-size: 92px
+                    color: #dfc691
+    .btn a
+        display: inline-block
+        background-color: white
+        padding: 20px 29px
+        position: absolute
+        left: -20px
+        bottom: -15px
+        text-transform: uppercase
+        color: #dfc691
+        border: 1px dashed #dfc691
+        font-size: 18px
+        font-weight: 600
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1)
+#footer
+    clear: both
+    width: 100%
+    background-color: #f3f1e9
+    padding: 97px 0 68px 0
+    text-align: center
+    font-family: Alegreya, serif
+    .left
+        float: left
+    .right
+        float: right
+    .left, .right
+        font-size: 0
+        li
+            display: inline-block
+            border-top: 1px solid #bfbbb7
+            border-bottom: 1px solid #bfbbb7
+            position: relative
+            &::after
+                content: '~'
+                font-size: 14px
+                display: block
+                position: absolute
+                right: 0
+                top: 36%
+                color: $primary
+            &:last-child::after
+                content: ''
+                display: none
+            a
+                display: inline-block
+                padding: 30px 40px
+                font-size: 14px
+                line-height: 24px
+                letter-spacing: 0.3em
+                color: $primary
+                text-transform: uppercase
+                text-shadow: 0 0 51px rgba(0, 0, 0, 1)
+    .logo
+        display: inline-block
+        padding-top: 25px
+@media (max-width:1400px)
+    #breakfast
+        .note
+            right: 0
+    #breakfast
+        overflow: hidden
+        height: auto
+        .note
+            position: initial
+            margin: 0 auto
+            margin-top: 120px
+        .col1
+            width: 30%
+            text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5)
+        .col2
+            width: 70%
+        .description
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 1)
+@media (max-width:1260px)
+    .container
+        width: 100%
+        margin: 0 auto
+    #header
+        #showNav
+            display: block
+        #top ul#navigation
+            display: none
+            width: 100%
+            padding: 0
+            position: absolute
+            left: 0
+            top: 70px
+            margin-top: 0
+            li
+                display: block
+                width: 100%
+                background: rgba(86,83,76,0.5)
+                padding: 15px
+                box-sizing: border-box
+                a
+                    padding-left: 0
+                &::after
+                    content: ''
+                    display: none
+            padding-bottom: 50px
+    #art
+        .col
+            width: 50%
+        .images
+            padding: 30px 0
+            width: 80%
+            margin: 0 auto
+            .main-img
+                width: 100%
+            .overlay-img
+                width: 40%
+    .container, #art, #pancakes .block
+        padding: 0 10px
+        box-sizing: border-box
+@media (max-width:1140px)
+    #pancakes .block
+        padding: 0 10px
+        box-sizing: border-box
+        width: 100%
+    #pancakes .rating-side, #pancakes .content::before
+        display: none
+    #header h1#site-title
+        line-height: normal
+    #pancakes
+        .block
+            background: initial
+        .ready-box
+            right: 90px
+            top: -60px
+        .content
+            position: initial
+            overflow: hidden
+            width: 100%
+        .ready-box
+            right: 50%
+            top: -60px
+            transform: translate(50%, 0)
+        .content
+            margin-top: 120px
+            height: auto
+    #sandwich
+        overflow: visible
+        height: 1050px
+        .left
+            width: 100%
+            margin-top: 0
+        .info
+            box-shadow: none
+            right: 0
+            li
+                padding: 40px 36px
+        .right-image
+            width: 100%
+            box-sizing: border-box
+        .btn
+            a
+                left: 20px
+        ul
+            li
+                display: inline-block
+                width: 33%
+        .right
+            width: 100%
+    #footer
+        overflow: hidden
+        padding: 20px 0
+        .logo
+            display: block
+            padding-bottom: 30px
+        .left, .right
+            float: none
+        .left
+            li
+                border-bottom: 0
+@media (max-width:768px)
+    #art, #pancakes .block, #pancakes .content
+        width: 100%
+
+    #social
+        padding-right: 30px
+    #art
+        .col
+            width: 100%
+
+@media (max-width:700px)
+
+    #header
+        padding-bottom: 30px
+        .btn
+            display: inline-block
+
+    #pancakes
+
+    #sandwich
+        .container
+            padding: 0
+        .description
+            padding: 10px
+        .right-image
+            box-shadow: none
+        .btn
+            a
+                position: static
+        ul
+            li
+                width: 100%
+        .info
+            position: static
+            li
+                box-sizing: border-box
+@media (max-width: 600px)
+    #header
+        .slogan
+            padding-bottom: 20px
+    #breakfast
+        .note
+            width: 100%
+            padding: 30px
+            background-color: #f3f1e9
+            background-image: none
+            margin-bottom: 130px
+            height: auto
+        .col1, .col2
+            width: 100%
+
+    #pancakes
+        height: 100%
+        padding-bottom: 50px
+        .slider-control, .left-arrow, .right-arrow
+            text-align: center
+    #art
+        .avatar, .avatar-col, .avatar-col-center
+
+    #art
+        .avatar
+            height: auto
+        .avatar-col-center
+            padding: 10px 0
+            height: 100%
+        .avatar, .avatar-col, .avatar-col-center
+            margin-top: 0
+            float: none
+            width: 100%
+            float: none
+        blockquote
+            width: auto
+
+@media (max-width:460px)
+    #footer
+        .left, .right
+            li::after
+                content: ''
+                display: none
+
+/* SLIDER */
+.owl-theme
+    .owl-item
+        text-align: center
+    .owl-controls
+        margin: 0
+        .owl-page
+            span
+                background: #d8bba3
+        .owl-buttons
+            div
+                padding: 0
+                background: initial
+            .owl-prev
+                padding: 0
+                background: initial
+                position: absolute
+                left: -45px
+                top: 20%
+            .owl-next
+                padding: 0
+                background: initial
+                position: absolute
+                right: -40px
+                top: 20%

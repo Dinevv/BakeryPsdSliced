@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+    <script src="http://localhost:7777/livereload.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <nav id="top">
+            <div class="container">
+                <div id="site-logo"><a href="#" alt="Gustoso"><img src="imgs/logo.png" alt="logo"></a></div>
+                <ul id="navigation">
+                    <li><a href="#">Welcome</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">reservations</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <ul id="social">
+                        <li>
+                            <a href="#" alt="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" alt="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" alt="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" onClick="toggleNav()" id="showNav" class="show"><span></span></a>
+                        </li>
+                        <!-- <li>
+                            <a href="#" onClick="toggleNav()"><i id="showNav" class="fa fa-bars" aria-hidden="true"></i></a>
+                        </li> -->
+                </ul>
+            </div>
+        </nav>
+        <div class="content">
+            <div class="container">
+                <h1 id="site-title">Pastry with love</h1>
+                <img class="dashed-line" src="imgs/dashed-line.png" alt="dashed-line.png">
+                <p class="slogan">We’re bringing you fresh ingredients every<br/> day in ways you can’t resist.</p>
+                <a href="#" class="btn">Our menu</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="art">
+            <div class="container">
+                <div class="col">
+                    <h2>Art of cakes</h2>
+                    <span class="h2sub">we create delicious memories</span>
+                    <p>
+                        Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.<br/> Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.<br/> Maecenas tempus, tellus eget condimentum rhoncus, sem quam<br/> semper libero, sit amet adipiscing sem neque sed.
+                    </p>
+                    <h3>Chef Cook</h3>
+                    <div class="avatar">
+                        <div>
+                            <div class="avatar-col"><p>Benito</p></div>
+                            <div class="avatar-col-center"><img src="imgs/art-avatar.png" alt="avatar"></div>
+                            <div class="avatar-col"><p>Gaspare</p></div>
+                        </div>
+                    </div>
+                    <blockquote>
+                        <img src="imgs/quote-text.png" alt="">
+                    </blockquote>
+                </div>
+                <div class="col">
+                    <div class="images">
+                        <img src="imgs/art-images.png" alt="" class="main-img">
+                        <img src="imgs/art-tastes-so-good.png" alt="tastes so good" class="overlay-img">
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="pancakes">
+            <div class="container">
+                <div class="block">
+                    <div class="ready-box"><p><span class="h2sub">ready in</span><br/><span class="number">40</span><br/>mins</p></div>
+                    <div class="rating-side">
+                        <i class="fa fa-star rated" aria-hidden="true"></i><i class="fa fa-star rated" aria-hidden="true"></i><i class="fa fa-star rated" aria-hidden="true"></i><i class="fa fa-star rated" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="content">
+                        <h2>Tasty pancakes</h2>
+                        <span class="h2sub">season favourite</span>
+                        <p>Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus.</p>
+                        <div class="rating"><i class="fa fa-star rated" aria-hidden="true"></i><i class="fa fa-star rated" aria-hidden="true"></i><i class="fa fa-star rated" aria-hidden="true"></i><i class="fa fa-star rated" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></div>
+                        <div class="slider-control">
+                            <div id="slider1" class="owl-carousel">
+                                <a href="#"><img src="imgs/slide-thumb1.png" alt="thumb1"></a>
+                                <a href="#"><img src="imgs/slide-thumb2.png" alt="thumb2"></a>
+                                <a href="#"><img src="imgs/slide-thumb3.png" alt="thumb3"></a>
+                                <a href="#"><img src="imgs/slide-thumb1.png" alt="thumb1"></a>
+                                <a href="#"><img src="imgs/slide-thumb2.png" alt="thumb2"></a>
+                                <a href="#"><img src="imgs/slide-thumb3.png" alt="thumb3"></a>
+                                <a href="#"><img src="imgs/slide-thumb1.png" alt="thumb1"></a>
+                                <a href="#"><img src="imgs/slide-thumb2.png" alt="thumb2"></a>
+                                <a href="#"><img src="imgs/slide-thumb3.png" alt="thumb3"></a>
+                            </div>
+                            <!--<a href="#"><img src="imgs/slider-arrow.png" class="left-arrow" alt="left arrow"></a>
+                            <div class="thumbs">
+                                <a href="#"><img src="imgs/slide-thumb1.png" alt="thumb1"></a>
+                                <a href="#"><img src="imgs/slide-thumb2.png" alt="thumb2"></a>
+                                <a href="#"><img src="imgs/slide-thumb3.png" alt="thumb3"></a>
+                            </div>
+                            <a href="#"><img src="imgs/slider-arrow-r.png" class="right-arrow" alt="right arrow"></a>
+                            <div class="dots"><a href="#"><i class="fa fa-circle-o" aria-hidden="true"></i></a><a href="#"><i class="fa fa-circle" aria-hidden="true"></i></a><a href="#"><i class="fa fa-circle" aria-hidden="true"></i></a><a href="#"><i class="fa fa-circle" aria-hidden="true"></i></a></div
+                            -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="breakfast">
+            <div class="container">
+                <div class="col col1">
+                    <h2>Breakfast</h2>
+                    <span class="h2sub">7am Breakfast? we’re open!</span>
+                    <ul>
+                        <li><span class="type">Full breakfast</span><br/><span class="description">Duis ut tortor, et risus, vulputate pretium</span><br/><span class="price">$12.49</span></li>
+                        <li><span class="type">Toast & Jam</span><br/><span class="description">Suspendisse, tempus, nterdum</span><br/><span class="price">$4.90</span></li>
+                        <li><span class="type">Muffins</span><br/><span class="description">Fusce eget dui sodales est</span><br/><span class="price">$3.95</span></li>
+                    </ul>
+                </div>
+                <div class="col col2">
+                    <div class="note">
+                        <div class="head">
+                            <span class="left">EST.</span>
+                            <span class="right">1893</span>
+                            <img src="imgs/breakfast-note-separator.png" class="separator-img" alt="separator">
+                        </div>
+                        <h3>Your morning Escape with Flair</h3>
+                        <p>Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo.</p>
+                        <a href="#" class="btn">read</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="sandwich">
+            <div class="container">
+                <div class="top">
+                    <h2>The Jibarito sandwich</h2>
+                    <span class="h2sub">the best sandwich you’ve ever tasted!</span>
+                </div>
+                <div class="left">
+                    <ul>
+                        <li><img src="imgs/sandwich-img1.png" alt="Class aptent"><br/><span class="title">Class aptent</span><br/><span class="description">Quot alienum persecuti ut eam, nam ad atqui primis nusquam.</span></li>
+                        <li><img src="imgs/sandwich-img2.png" alt="Nulla eget"><br/><span class="title">Nulla eget</span><br/><span class="description">Nullam dictum felis eu pede mollis pretium Integer tincidunt.</span></li>
+                        <li><img src="imgs/sandwich-img3.png" alt="Sed nibh purus"><br/><span class="title">Sed nibh purus</span><br/><span class="description"> Aenean eleifend tellus leo ligula, porttitor eu, consequat vitae.</span></li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <img class="right-image" src="imgs/sandwich-bigimg.jpg" alt="big image" />
+                    <div class="btn"><a href="">full recipe</a></div>
+                    <ul class="info">
+                        <li class="ready-box"><span class="h2sub">prep</span><br/><span class="number">15</span><br/>min</li>
+                        <li class="ready-box"><span class="h2sub">cook</span><br/><span class="number">35</span><br/>min</li>
+                        <li class="ready-box"><span class="h2sub">ready in</span><br/><span class="number">40</span><br/>min</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="container">
+            <a href="#" alt="Gustoso" class="logo"><img src="imgs/logo-dark.png"/></a>
+            <ul class="left">
+                <li><a href="#">our menu</a></li>
+                <li><a href="#">gallery</a></li>
+                <li><a href="#">culture</a></li>
+            </ul>
+            <ul class="right">
+                <li><a href="#">events</a></li>
+                <li><a href="#">catering</a></li>
+                <li><a href="#">visit us</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+</body>
+
+</html>
